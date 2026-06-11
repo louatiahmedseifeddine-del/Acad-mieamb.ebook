@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Guide Premium AMB — Devenir Setteuse & Assistante Virtuelle | 49€</title>
+  <meta name="description" content="Le guide complet pour devenir setteuse ou assistante virtuelle et générer 1 400 à 3 000€/mois depuis chez toi. Par Sarah, fondatrice AMB Académie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rose:        #C94F78;
+      --rose-mid:    #D4537E;
+      --rose-light:  #F2C4D4;
+      --rose-bg:     #FDF0F4;
+      --cream:       #FAF7F4;
+      --beige:       #F0EAE3;
+      --dark:        #1A1208;
+      --text-dark:   #2C1A0E;
+      --text-mid:    #5C4033;
+      --text-soft:   #9E8E84;
+      --border:      rgba(158,142,132,0.2);
+      --radius:      16px;
+      --shadow-sm:   0 2px 12px rgba(44,26,14,0.07);
+      --shadow-md:   0 6px 28px rgba(44,26,14,0.12);
+      --font-title:  'Cormorant Garamond', Georgia, serif;
+      --font-body:   'Inter', system-ui, sans-serif;
+      --pad-x:       20px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── URGENCY BAR ── */
+    .urgency-bar {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      padding: 10px var(--pad-x);
+      font-weight: 500;
+    }
+    .urgency-bar span { color: var(--rose-light); }
+
+    /* ── WRAP ── */
+    .wrap { max-width: 540px; margin: 0 auto; padding: 0 var(--pad-x); }
+
+    /* ── SECTIONS ── */
+    .section { padding: 48px 0; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    /* ── TYPOGRAPHY ── */
+    h1, h2, h3 { font-family: var(--font-title); line-height: 1.2; color: var(--text-dark); }
+    h1 { font-size: clamp(2rem, 8vw, 3rem); font-weight: 500; }
+    h2 { font-size: clamp(1.5rem, 6vw, 2.2rem); font-weight: 500; margin-bottom: 14px; }
+    h3 { font-size: clamp(1.1rem, 4vw, 1.4rem); font-weight: 500; margin-bottom: 8px; }
+    .subtitle { font-size: 15px; color: var(--text-mid); line-height: 1.7; margin-bottom: 24px; }
+    .eyebrow {
+      display: inline-block; font-size: 10px; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--rose); margin-bottom: 14px;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      background: linear-gradient(180deg, rgba(212,83,126,0.06) 0%, transparent 60%), var(--cream);
+      padding: 32px var(--pad-x) 48px;
+      text-align: center;
+    }
+    .hero-logo { margin-bottom: 20px; display: flex; justify-content: center; }
+    .hero-logo img { width: 90px; height: 90px; object-fit: contain; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--rose-bg); border: 1px solid var(--rose-light);
+      border-radius: 999px; padding: 6px 14px;
+      font-size: 11px; font-weight: 600; color: var(--rose);
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero-price-block {
+      background: #fff;
+      border: 2px solid var(--rose-light);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      margin: 28px 0;
+      box-shadow: var(--shadow-md);
+    }
+    .price-main {
+      font-family: var(--font-title);
+      font-size: clamp(2.8rem, 12vw, 4rem);
+      font-weight: 600;
+      color: var(--rose);
+      line-height: 1;
+    }
+    .price-sub { font-size: 12px; color: var(--text-soft); margin-top: 4px; }
+    .price-includes {
+      margin-top: 14px;
+      display: flex; flex-direction: column; gap: 6px;
+      text-align: left;
+    }
+    .price-includes li {
+      list-style: none; font-size: 13px; color: var(--text-mid);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .price-includes li::before { content: "✓"; color: var(--rose); font-weight: 700; flex-shrink: 0; }
+    .btn-buy {
+      display: block; width: 100%;
+      background: linear-gradient(135deg, #D4537E, #C94F78);
+      color: #fff; font-family: var(--font-body);
+      font-size: 16px; font-weight: 600;
+      padding: 18px 24px; border-radius: 999px;
+      border: none; cursor: pointer; text-decoration: none;
+      text-align: center; margin-top: 16px;
+      box-shadow: 0 4px 20px rgba(201,79,120,0.35);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-buy:active { transform: scale(0.98); }
+    .btn-sub { font-size: 11px; color: var(--text-soft); margin-top: 8px; text-align: center; }
+
+    /* ── MOCKUP ── */
+    .ebook-mockup {
+      margin: 28px auto 0;
+      max-width: 280px;
+      position: relative;
+    }
+    .ebook-mockup img {
+      width: 100%; border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(44,26,14,0.2);
+    }
+
+    /* ── ABOUT ── */
+    .about-card {
+      display: flex; align-items: center; gap: 14px;
+      background: #fff; border-radius: var(--radius);
+      padding: 18px; box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+    .about-avatar {
+      width: 64px; height: 64px; border-radius: 50%;
+      object-fit: cover; flex-shrink: 0;
+      border: 2px solid var(--rose-light);
+    }
+    .about-name { font-weight: 600; font-size: 14px; color: var(--text-dark); }
+    .about-role { font-size: 12px; color: var(--text-soft); margin-top: 2px; }
+
+    /* ── WHAT'S INSIDE ── */
+    .chapter-list { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    .chapter-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: #fff; border-radius: 12px;
+      padding: 16px; box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+    .chapter-num {
+      font-family: var(--font-title);
+      font-size: 22px; font-weight: 600;
+      color: var(--rose-light); line-height: 1;
+      min-width: 28px;
+    }
+    .chapter-title { font-size: 14px; font-weight: 600; color: var(--text-dark); margin-bottom: 3px; }
+    .chapter-desc { font-size: 12px; color: var(--text-soft); line-height: 1.5; }
+
+    /* ── FOR WHO ── */
+    .for-list { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+    .for-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 14px; color: var(--text-mid); line-height: 1.5;
+    }
+    .for-item::before { content: "→"; color: var(--rose); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── TESTIMONIALS ── */
+    .testi-card {
+      background: #fff; border-radius: var(--radius);
+      padding: 18px; box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border); margin-bottom: 14px;
+    }
+    .testi-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .testi-head img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .testi-name { font-size: 13px; font-weight: 600; color: var(--text-dark); }
+    .profile-tag {
+      display: inline-block; font-size: 10px; font-weight: 500;
+      background: var(--rose-bg); color: var(--rose);
+      border-radius: 999px; padding: 3px 9px; margin-top: 3px;
+    }
+    .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+    .ba-cell {
+      border-radius: 8px; padding: 10px 10px 8px;
+      font-size: 12px; color: var(--text-mid); line-height: 1.4;
+    }
+    .ba-before { background: var(--beige); }
+    .ba-after  { background: var(--rose-bg); }
+    .ba-label {
+      display: block; font-size: 9px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .ba-before .ba-label { color: var(--text-soft); }
+    .ba-after  .ba-label { color: var(--rose); }
+    .testi-card img.result-img {
+      width: 100%; border-radius: 10px; display: block; margin-top: 8px;
+    }
+
+    /* ── GUARANTEE ── */
+    .guarantee-box {
+      background: var(--dark); color: #fff;
+      border-radius: var(--radius); padding: 24px 20px;
+      text-align: center; margin-top: 20px;
+    }
+    .guarantee-icon { font-size: 32px; margin-bottom: 10px; }
+    .guarantee-box h3 { color: #fff; font-size: 1.2rem; margin-bottom: 8px; }
+    .guarantee-box p { font-size: 13px; color: rgba(255,255,255,0.75); line-height: 1.7; }
+
+    /* ── FAQ ── */
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .faq-q {
+      font-size: 14px; font-weight: 500; color: var(--text-dark);
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    }
+    .faq-q::after { content: "+"; font-size: 20px; color: var(--rose); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { font-size: 13px; color: var(--text-mid); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.2s; }
+    .faq-item.open .faq-a { max-height: 300px; padding-top: 10px; }
+
+    /* ── STICKY CTA ── */
+    .sticky-buy {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: #fff; border-top: 1px solid var(--border);
+      padding: 12px var(--pad-x) calc(12px + env(safe-area-inset-bottom));
+      z-index: 100; box-shadow: 0 -4px 20px rgba(44,26,14,0.1);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .sticky-price { font-family: var(--font-title); font-size: 22px; font-weight: 600; color: var(--rose); white-space: nowrap; }
+    .sticky-buy .btn-buy { margin: 0; padding: 14px 20px; font-size: 14px; flex: 1; }
+
+    /* ── PHOTO ── */
+    .full-photo { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-md); display: block; }
+
+    /* ── CRED GRID ── */
+    .cred-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 12px; margin-top: 24px;
+      background: var(--beige); border-radius: var(--radius); padding: 20px 16px;
+    }
+    .cred-grid > div { text-align: center; }
+    .cred-n { font-family: var(--font-title); font-size: 1.8rem; font-weight: 600; color: var(--rose); }
+    .cred-l { font-size: 10px; color: var(--text-soft); margin-top: 2px; line-height: 1.4; }
+
+    /* ANIMATIONS */
+    .fade-up { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fade-up.in { opacity: 1; transform: none; }
+
+    @media (min-width: 640px) {
+      :root { --pad-x: 32px; }
+      h1 { font-size: 3.2rem; }
+      .hero-logo img { width: 110px; height: 110px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- URGENCY BAR -->
+  <div class="urgency-bar">
+    <span>📖 Guide Premium</span> · Téléchargement immédiat après paiement · <span>49€ — accès à vie</span>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="wrap">
+
+      <div class="hero-logo fade-up">
+        <img src="logo.png" alt="AMB Académie">
+      </div>
+
+      <div class="hero-badge fade-up">✦ Le Guide Premium AMB</div>
+
+      <h1 class="fade-up">De zéro à<br><em style="color:var(--rose)">setteuse pro</em><br>— le guide complet.</h1>
+
+      <p class="subtitle fade-up" style="margin-top:16px;">Tout ce que j'aurais aimé avoir quand j'ai commencé. Les techniques terrain, les scripts qui convertissent, la méthode pour décrocher ses premiers clients — en un seul guide actionnable.</p>
+
+      <div class="hero-price-block fade-up">
+        <div class="price-main">49€</div>
+        <div class="price-sub">Paiement unique · Accès à vie · PDF interactif</div>
+        <ul class="price-includes">
+          <li>Le guide PDF interactif complet (74+ étapes)</li>
+          <li>Scripts de setting prêts à l'emploi</li>
+          <li>Méthode pour trouver tes premiers clients</li>
+          <li>Techniques de closing et de suivi</li>
+          <li>Mises à jour incluses</li>
+        </ul>
+        <a href="https://www.paypal.com/ncp/payment/DXYJ5RET2DAKA" target="_blank" rel="noopener noreferrer" class="btn-buy">
+          Je télécharge le guide — 49€ →
+        </a>
+        <p class="btn-sub">🔒 Paiement sécurisé · Téléchargement immédiat</p>
+      </div>
+
+      <div class="ebook-mockup fade-up">
+        <img src="sarah-academie.png" alt="Le Guide Premium AMB — aperçu">
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ À PROPOS ══ -->
+  <section class="section">
+    <div class="wrap">
+
+      <span class="eyebrow fade-up">Qui a créé ce guide ?</span>
+
+      <div class="about-card fade-up">
+        <img src="sarah-phone.png" alt="Sarah" class="about-avatar">
+        <div>
+          <div class="about-name">Sarah — Fondatrice AMB Académie</div>
+          <div class="about-role">Setteuse pro · Vit à Bali · 5h/jour</div>
+        </div>
+      </div>
+
+      <p class="subtitle fade-up">Je m'appelle Sarah. J'ai créé ce guide après avoir formé plus de 40 femmes à devenir setteuses ou assistantes virtuelles. Ce n'est pas une compilation de conseils génériques — c'est exactement la méthode que j'utilise et que j'enseigne, condensée dans un format actionnable.</p>
+
+      <!-- Vidéo 1 -->
+      <div class="fade-up yt-wrap" style="position:relative;width:100%;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);cursor:pointer;background:#000;margin-bottom:24px;" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/qcmouNqu_Ys?autoplay=1\' allow=\'autoplay;encrypted-media\' allowfullscreen style=\'width:100%;aspect-ratio:16/9;border:none;display:block;\'></iframe>'">
+        <img src="https://img.youtube.com/vi/qcmouNqu_Ys/maxresdefault.jpg" alt="Vidéo — Ce métier est-il fait pour toi ?" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.15);">
+          <div style="width:64px;height:64px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.3);">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><polygon points="8,5 19,12 8,19" fill="#D4537E"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <img src="sarah-bali.png" alt="Sarah à Bali" class="full-photo fade-up">
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ CONTENU ══ -->
+  <section class="section">
+    <div class="wrap">
+
+      <span class="eyebrow fade-up">Ce que tu vas apprendre</span>
+      <h2 class="fade-up">11 modules.<br>74+ étapes.<br>Zéro remplissage.</h2>
+      <p class="subtitle fade-up">Chaque chapitre t'amène concrètement plus près de ton premier contrat.</p>
+
+      <div class="chapter-list fade-up">
+        <div class="chapter-item">
+          <div class="chapter-num">01</div>
+          <div>
+            <div class="chapter-title">Construis tes fondations en béton</div>
+            <div class="chapter-desc">Comprendre le métier de setteuse, le positionnement, les erreurs à éviter dès le départ.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">02</div>
+          <div>
+            <div class="chapter-title">Organise-toi comme une BOSS</div>
+            <div class="chapter-desc">Outils, organisation, gestion du temps — travailler efficacement en 2 à 5h par jour.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">03</div>
+          <div>
+            <div class="chapter-title">Deviens une AS des outils digitaux</div>
+            <div class="chapter-desc">Les plateformes, les logiciels et les raccourcis que les pros utilisent vraiment.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">04</div>
+          <div>
+            <div class="chapter-title">Marketing Digital & Réseaux sociaux</div>
+            <div class="chapter-desc">Comment te rendre visible, attirer les bons clients et construire ta présence en ligne.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">05</div>
+          <div>
+            <div class="chapter-title">Deviens la Queen des Chiffres & du Pilotage</div>
+            <div class="chapter-desc">KPIs, reporting, tableaux de bord — parle le langage de tes clients.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">06</div>
+          <div>
+            <div class="chapter-title">Setting — les Bases</div>
+            <div class="chapter-desc">Qu'est-ce que le setting écrit, comment ça fonctionne, les règles du jeu.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">07</div>
+          <div>
+            <div class="chapter-title">Setting Écrit — Deviens une Pro de la conviction</div>
+            <div class="chapter-desc">Scripts, objections, techniques de persuasion par message. Ce qui convertit vraiment.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">08</div>
+          <div>
+            <div class="chapter-title">Setting Appel</div>
+            <div class="chapter-desc">Comment qualifier, mener et clôturer un appel de setting. Méthode et scripts inclus.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">09</div>
+          <div>
+            <div class="chapter-title">Influence avec éthique</div>
+            <div class="chapter-desc">Persuader sans manipuler. Les principes psychologiques derrière une bonne conversation de vente.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">10</div>
+          <div>
+            <div class="chapter-title">Trouve tes clients et deviens incontournable</div>
+            <div class="chapter-desc">Prospection, pitchs, où trouver tes premiers clients et comment les convaincre de te choisir.</div>
+          </div>
+        </div>
+        <div class="chapter-item">
+          <div class="chapter-num">11</div>
+          <div>
+            <div class="chapter-title">Mission et Dev à son compte</div>
+            <div class="chapter-desc">Tarifs, contrats, facturation, gestion d'une activité freelance — lancer ton business.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ POUR QUI ══ -->
+  <section class="section">
+    <div class="wrap">
+
+      <span class="eyebrow fade-up">Ce guide est fait pour toi si…</span>
+      <h2 class="fade-up">Tu te reconnais dans l'une de ces situations.</h2>
+
+      <div class="for-list fade-up">
+        <div class="for-item">Tu veux générer des revenus en ligne sans créer de contenu ni dépendre d'un employeur.</div>
+        <div class="for-item">Tu as 2 à 5h par jour et tu veux que ça serve à construire quelque chose de concret.</div>
+        <div class="for-item">Tu as déjà essayé des formations mais tu n'as jamais eu de méthode claire et actionnable.</div>
+        <div class="for-item">Tu veux travailler depuis chez toi — ou depuis n'importe où dans le monde.</div>
+        <div class="for-item">Tu pars de zéro et tu veux aller droit au but, sans perdre du temps sur du contenu inutile.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ VIDÉO 2 ══ -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow fade-up">Les coulisses</span>
+      <h2 class="fade-up">Ma journée type, mes revenus.<br>Sans filtre.</h2>
+      <p class="subtitle fade-up">Pas de chiffres inventés. La réalité du métier, vue de l'intérieur.</p>
+
+      <div class="fade-up yt-wrap" style="position:relative;width:100%;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);cursor:pointer;background:#000;" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/dn82DJkvH2I?autoplay=1\' allow=\'autoplay;encrypted-media\' allowfullscreen style=\'width:100%;aspect-ratio:16/9;border:none;display:block;\'></iframe>'">
+        <img src="https://img.youtube.com/vi/dn82DJkvH2I/hqdefault.jpg" alt="Vidéo — Les coulisses, mes revenus, sans filtre" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.15);">
+          <div style="width:64px;height:64px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.3);">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><polygon points="8,5 19,12 8,19" fill="#D4537E"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ TÉMOIGNAGES ══ -->
+  <section class="section">
+    <div class="wrap">
+
+      <span class="eyebrow fade-up">Elles l'ont fait</span>
+      <h2 class="fade-up">Des femmes comme toi.<br>Des résultats réels.</h2>
+      <p class="subtitle fade-up">Toutes ont commencé sans expérience. Elles ont juste décidé d'arrêter d'attendre.</p>
+
+      <div class="testi-card fade-up">
+        <div class="testi-head">
+          <img src="https://i.pravatar.cc/150?img=47" alt="Sidonie">
+          <div>
+            <div class="testi-name">Sidonie</div>
+            <span class="profile-tag">🎓 Étudiante fraîchement diplômée</span>
+          </div>
+        </div>
+        <div class="ba-grid">
+          <div class="ba-cell ba-before"><span class="ba-label">Avant</span>Étudiante sur la fin de ses études</div>
+          <div class="ba-cell ba-after"><span class="ba-label">Après</span>2 400€/mois en travaillant 5h par jour</div>
+        </div>
+        <img src="sidonie-result.jpg" alt="Résultat Sidonie" class="result-img">
+      </div>
+
+      <div class="testi-card fade-up">
+        <div class="testi-head">
+          <img src="https://i.pravatar.cc/150?img=45" alt="Océane">
+          <div>
+            <div class="testi-name">Océane</div>
+            <span class="profile-tag">💻 Freelance</span>
+          </div>
+        </div>
+        <div class="ba-grid">
+          <div class="ba-cell ba-before"><span class="ba-label">Avant</span>Freelance en marketing, revenus instables</div>
+          <div class="ba-cell ba-after"><span class="ba-label">Après</span>1 452€ lors de son premier mois de mission</div>
+        </div>
+        <img src="oceane-result-1.jpg" alt="Résultat Océane" class="result-img">
+      </div>
+
+      <div class="testi-card fade-up">
+        <div class="testi-head">
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Maëlle">
+          <div>
+            <div class="testi-name">Maëlle</div>
+            <span class="profile-tag">⏱ Complément de revenus</span>
+          </div>
+        </div>
+        <div class="ba-grid">
+          <div class="ba-cell ba-before"><span class="ba-label">Avant</span>3h disponibles par jour à côté de son job</div>
+          <div class="ba-cell ba-after"><span class="ba-label">Après</span>1 187€/mois en plus de son salaire</div>
+        </div>
+        <img src="maelle-result.jpg" alt="Résultat Maëlle" class="result-img">
+      </div>
+
+      <div class="cred-grid fade-up">
+        <div><div class="cred-n">40+</div><div class="cred-l">femmes formées</div></div>
+        <div><div class="cred-n">90j</div><div class="cred-l">pour tes premiers revenus</div></div>
+        <div><div class="cred-n">49€</div><div class="cred-l">accès à vie</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ CTA CENTRAL ══ -->
+  <section class="section" style="background:var(--rose-bg);">
+    <div class="wrap" style="text-align:center;">
+
+      <span class="eyebrow fade-up">Prête à commencer ?</span>
+      <h2 class="fade-up" style="margin-bottom:12px;">Tout ce qu'il te faut<br>pour te lancer — maintenant.</h2>
+      <p class="subtitle fade-up">Un paiement unique. Un téléchargement immédiat. Et une méthode qui a déjà fonctionné pour des dizaines de femmes avant toi.</p>
+
+      <div class="hero-price-block fade-up" style="text-align:left;">
+        <div class="price-main" style="text-align:center;">49€</div>
+        <div class="price-sub" style="text-align:center;">Paiement unique · Accès à vie · PDF interactif</div>
+        <ul class="price-includes" style="margin-top:16px;">
+          <li>Guide PDF interactif complet (74+ étapes, 11 modules)</li>
+          <li>Scripts de setting écrit et appel</li>
+          <li>Méthode acquisition clients de zéro</li>
+          <li>Techniques de closing éthique</li>
+          <li>Mises à jour futures incluses</li>
+        </ul>
+        <a href="https://www.paypal.com/ncp/payment/DXYJ5RET2DAKA" target="_blank" rel="noopener noreferrer" class="btn-buy">
+          Je prends le guide — 49€ →
+        </a>
+        <p class="btn-sub">🔒 Paiement sécurisé · Accès immédiat après paiement</p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ GARANTIE ══ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="guarantee-box fade-up">
+        <div class="guarantee-icon">💬</div>
+        <h3>Ce guide demande de toi — honnêtement</h3>
+        <p>Ce n'est pas un PDF que tu vas lire en pyjama et oublier. C'est un guide terrain. Il te demande de passer à l'action, de contacter des clients, de sortir de ta zone de confort. Je ne te promets pas la facilité — je te promets la clarté.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ FAQ ══ -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow fade-up">Questions fréquentes</span>
+      <h2 class="fade-up">Ce que tu te demandes sûrement.</h2>
+
+      <div style="margin-top:20px;">
+        <div class="faq-item fade-up">
+          <div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">C'est quoi exactement ce guide ?</div>
+          <div class="faq-a">Un PDF interactif de 74+ étapes réparties en 11 modules. Il couvre tout ce qu'il faut savoir pour devenir setteuse ou assistante virtuelle : les bases du métier, les outils, le setting écrit et appel, la prospection, et comment lancer ton activité freelance.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">J'ai zéro expérience — ce guide est fait pour moi ?</div>
+          <div class="faq-a">Oui. Ce guide part de zéro. Tu n'as pas besoin d'expérience en vente, en marketing ou en business. Il est conçu pour quelqu'un qui découvre ce métier et veut aller droit au but.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">Quelle différence avec l'AMB Académie complète ?</div>
+          <div class="faq-a">Le guide est le support écrit qui condense la méthode. L'académie ajoute les vidéos, le coaching individuel, les lives de groupe et l'accès aux 40+ missions par mois de mon réseau. Le guide est idéal pour démarrer, l'académie pour être accompagnée jusqu'au premier contrat.</div>
+        </div>
+        <div class="faq-item fade-up">
+          <div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">Comment je reçois le guide après paiement ?</div>
+          <div class="faq-a">Immédiatement après le paiement, tu reçois un lien de téléchargement par email. Le PDF est compatible avec tous les appareils (ordinateur, tablette, mobile).</div>
+        </div>
+        <div class="faq-item fade-up">
+          <div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">Est-ce qu'il y a une garantie ?</div>
+          <div class="faq-a">Étant donné que c'est un produit digital téléchargeable immédiatement, les remboursements ne sont pas proposés. Je te recommande de lire attentivement la description avant d'acheter.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ══ FOOTER CTA ══ -->
+  <section class="section" style="text-align:center; padding-bottom: 100px;">
+    <div class="wrap">
+      <img src="logo.png" alt="AMB Académie" style="width:70px;height:70px;object-fit:contain;margin:0 auto 16px;display:block;">
+      <p style="font-size:13px;color:var(--text-soft);font-style:italic;margin-bottom:24px;">« Les femmes qui changent leur vie ne sont pas différentes de toi.<br>Elles ont juste décidé d'arrêter d'attendre. »</p>
+      <a href="https://www.paypal.com/ncp/payment/DXYJ5RET2DAKA" target="_blank" rel="noopener noreferrer" class="btn-buy" style="max-width:320px;margin:0 auto;">
+        Je prends le guide — 49€ →
+      </a>
+      <p class="btn-sub" style="margin-top:10px;">🔒 Sécurisé · Téléchargement immédiat · Accès à vie</p>
+    </div>
+  </section>
+
+  <!-- STICKY BUY BAR -->
+  <div class="sticky-buy">
+    <div class="sticky-price">49€</div>
+    <a href="https://www.paypal.com/ncp/payment/DXYJ5RET2DAKA" target="_blank" rel="noopener noreferrer" class="btn-buy">
+      Télécharger le guide →
+    </a>
+  </div>
+
+  <script>
+    // Fade-up animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // FAQ
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        q.closest('.faq-item').classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
